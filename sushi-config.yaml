@@ -7,11 +7,11 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: your.package.id
+id: national.hie.fhir
 canonical: http://your.canonical.url/fhir
-url: http://your.canonical.url/fhir/ImplementationGuide/your.package.id
-name: YourIgComputableName
-title: "Your IG Title"
+url: http://your.canonical.url/fhir/ImplementationGuide/national.hie.fhir
+name: NationalPatient
+title: "National Patient System FHIR"
 description: A sample FHIR Implementation Guide to create capacity among the community.
 status: active
 license: CC0-1.0
