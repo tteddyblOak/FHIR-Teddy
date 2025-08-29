@@ -1,0 +1,10 @@
+map "http://moh.bw.org/fhir/StructureMap/NationalPatientToFHIRR4Patient" = "NationalPatientToFHIRR4Patient"
+
+uses "http://moh.bw.org/fhir/StructureDefinition/NationalPatientToFHIRR4Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group NationalPatientToFHIRR4Patient(source src : NationalPatientLogicalModel, target tgt : Patient) {
+    src.name as srcName -> tgt.name as pName then {
+        srcName -> pName.text = srcName "SetPatientFullName";
+    };
+}
