@@ -26,3 +26,14 @@ Description: "Requirements to register a CHT patient."
 * differential.element[=].max = "*"
 * differential.element[=].mapping[+].identity = "FHIR-R4"
 * differential.element[=].mapping[=].map = "."
+
+* differential.element[+].id = "NationalPatientLogicalModel.name"
+* differential.element[=].path = "NationalPatientLogicalModel.name"
+* differential.element[=].short = "Full Name"
+* differential.element[=].definition = "Patient full name"
+* differential.element[=].type.code = #string
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "Patient.name.text"
+* differential.element[=].isSummary = true
