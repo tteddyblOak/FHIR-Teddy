@@ -12,7 +12,9 @@ Description: "Basic patient profile with demographic and nationality information
 * gender 1..1 MS
 
 * address 1..* MS
+
 * maritalStatus from VSMaritalStatus (extensible)
+* maritalStatus.text 1..1 MS
 
 Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 
