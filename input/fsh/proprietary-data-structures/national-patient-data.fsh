@@ -7,11 +7,11 @@ Description: "Requirements to register a CHT patient."
 * experimental = true
 * status = #active
 * name = "NationalPatientLogicalModel"
-* url = "http://moh.org.bw/fhir/StructureDefinition/NationalPatientLogicalModel"
+* url = "http://moh.bw.org/fhir/StructureDefinition/NationalPatientLogicalModel"
 * version = "0.1.0"
 * kind = #logical
 * abstract = false
-* type = "http://moh.org.bw/fhir/StructureDefinition/NationalPatientLogicalModel"
+* type = "http://moh.bw.org/fhir/StructureDefinition/NationalPatientLogicalModel"
 * baseDefinition = "http://hl7.org/fhir/StructureDefinition/Base"
 * derivation = #specialization
 * fhirVersion = #4.0.1
