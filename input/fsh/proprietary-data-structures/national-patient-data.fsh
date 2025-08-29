@@ -37,3 +37,36 @@ Description: "Requirements to register a CHT patient."
 * differential.element[=].mapping[+].identity = "FHIR-R4"
 * differential.element[=].mapping[=].map = "Patient.name.text"
 * differential.element[=].isSummary = true
+
+* differential.element[+].id = "NationalPatientLogicalModel.ethnicity"
+* differential.element[=].path = "NationalPatientLogicalModel.ethnicity"
+* differential.element[=].short = "Ethnicity"
+* differential.element[=].definition = "Patient ethnicity"
+* differential.element[=].type.code = #string
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "Patient.ethnicity.text"
+* differential.element[=].isSummary = true
+
+* differential.element[+].id = "NationalPatientLogicalModel.race"
+* differential.element[=].path = "NationalPatientLogicalModel.race"
+* differential.element[=].short = "Race"
+* differential.element[=].definition = "Patient race"
+* differential.element[=].type.code = #string
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "Patient.race.text"
+* differential.element[=].isSummary = true
+
+* differential.element[+].id = "NationalPatientLogicalModel.PlaceOfBirth"
+* differential.element[=].path = "NationalPatientLogicalModel.PlaceOfBirth"
+* differential.element[=].short = "Place of Birth"
+* differential.element[=].definition = "Patient place of birth"
+* differential.element[=].type.code = #string
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "Patient.birthPlace.text"
+* differential.element[=].isSummary = true
