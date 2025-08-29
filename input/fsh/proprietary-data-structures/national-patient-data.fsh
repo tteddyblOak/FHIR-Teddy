@@ -18,3 +18,11 @@ Description: "Requirements to register a CHT patient."
 
 * mapping[+].identity = "FHIR-R4"
 * mapping[=].name = "FHIR Release 4"
+
+* differential.element[+].id = "NationalPatientLogicalModel"
+* differential.element[=].path = "NationalPatientLogicalModel"
+* differential.element[=].definition = "A sample data dictionary describing the National Patient message structure."
+* differential.element[=].min = 0
+* differential.element[=].max = "*"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "."
