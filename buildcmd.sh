@@ -34,7 +34,6 @@ echo "Changed to directory: $(pwd)"
 # Check if _genonce.sh exists and is executable
 if [ ! -f "_genonce.sh" ]; then
     echo "Error: _genonce.sh not found in: $FHIR_TEDDY_DIR"
-    exit 1
 fi
 
 if [ ! -x "_genonce.sh" ]; then

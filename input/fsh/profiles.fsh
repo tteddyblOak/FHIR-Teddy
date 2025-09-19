@@ -25,21 +25,6 @@ Id: birth-registration-profile
 Title: "Birth Registration Profile"
 Description: "Profile for recording birth registration information"
 
-* identifier 2..* MS
-* identifier ^slicing.discriminator.type = #pattern
-* identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #open
-
-* identifier contains
-    birthCertificate 1..1 MS and
-    registrationNumber 1..1 MS
-
-* identifier[birthCertificate].system = "http://civil-reg/birth-cert" (exactly)
-* identifier[birthCertificate].value 1..1
-
-* identifier[registrationNumber].system = "http://civil-reg/reg-num" (exactly)
-* identifier[registrationNumber].value 1..1
-
 * name 1..* MS
 * name.given 1..* MS
 * name.family 1..1 MS
